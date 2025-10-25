@@ -1,0 +1,7 @@
+services:
+  express:
+    build: ./backend/express
+    environment:
+      - JWT_SECRET=change
+    ports:
+      - "3000:3000"
